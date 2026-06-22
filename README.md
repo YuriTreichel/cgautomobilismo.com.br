@@ -22,7 +22,7 @@ O portal serve como plataforma centralizadora para divulgação de resultados, c
 
 Este projeto foi construído utilizando um conjunto de tecnologias web focadas em simplicidade, manutenibilidade e alta performance visual:
 
-* **Core**: PHP (Modularização e controle de visualizações), HTML5 e Vanilla JavaScript (Efeitos interativos e dinâmicos)
+* **Core**: HTML5, Vanilla JavaScript (Efeitos interativos e dinâmicos)
 * **Estilização**: Vanilla CSS3 personalizado com variáveis de design para um tema esportivo escuro premium (Dark Mode)
 * **Fontes e Ícones**: FontAwesome e Google Fonts (Inter, Roboto)
 * **Layout**: CSS Grid, Flexbox e Bento Grid para apresentação moderna e responsiva
@@ -36,10 +36,6 @@ Abaixo está detalhada a organização de diretórios e arquivos do projeto:
 ```text
 cgautomobilismo.com.br/
 │
-├── includes/                      # Componentes reutilizáveis PHP
-│   ├── header.php                 # Cabeçalho global com menu de navegação
-│   └── footer.php                 # Rodapé global e scripts comuns
-│
 ├── assets/                        # Arquivos de estilização, scripts e mídias
 │   ├── css/
 │   │   └── style.css              # Estilo principal e design system
@@ -48,42 +44,23 @@ cgautomobilismo.com.br/
 │   ├── images/                    # Imagens do projeto
 │   └── video/                     # Vídeos de background e banners
 │
-├── index.php                      # Página inicial (Dashboard de Eventos e Classificação)
-├── sobre.php                      # História do CGA e Diretoria Executiva
-├── patrocinadores.php             # Relação de apoiadores e benefícios de patrocínio
-├── transparencia.php              # Documentos de prestação de contas e atas da diretoria
-├── contato.php                    # Formulário de contato e filiação de pilotos
-└── acessibilidade.php             # Diretrizes e opções de acessibilidade do portal
+├── index.html                     # Página inicial (Dashboard de Eventos e Classificação)
+├── sobre.html                     # História do CGA e Diretoria Executiva
+├── patrocinadores.html            # Relação de apoiadores e benefícios de patrocínio
+├── transparencia.html             # Documentos de prestação de contas e atas da diretoria
+├── contato.html                   # Formulário de contato e filiação de pilotos
+└── acessibilidade.html            # Diretrizes e opções de acessibilidade do portal
 ```
 
 ---
 
 ## 🚀 Como Executar o Projeto Localmente
 
-Como o projeto é construído sobre PHP, você precisará de um ambiente de servidor local para rodá-lo perfeitamente.
-
-### Requisitos Mínimos
-* PHP 7.4 ou superior
-* Servidor Web (Apache / Nginx / PHP Built-in Server)
+Como o projeto agora é composto apenas por arquivos estáticos (HTML, CSS, JS), você não precisa de um servidor PHP configurado!
 
 ### Passos para Execução
 
-#### Opção 1: Usando o Laragon ou XAMPP (Recomendado)
-1. Baixe e instale o [Laragon](https://laragon.org/) ou o [XAMPP](https://www.apachefriends.org/).
-2. Clone o repositório dentro do diretório root do servidor web:
-   * **Laragon**: `C:\laragon\www\cgautomobilismo.com.br`
-   * **XAMPP**: `C:\xampp\htdocs\cgautomobilismo.com.br`
-3. Inicie o Apache no painel de controle do seu servidor local.
-4. Acesse no seu navegador: `http://localhost/cgautomobilismo.com.br` (ou `http://cgautomobilismo.com.br.test` se estiver usando o Laragon com domínios virtuais).
-
-#### Opção 2: Servidor Interno do PHP (Via Terminal)
-Se você tem o PHP configurado nas suas variáveis de ambiente:
-1. Abra o terminal na pasta raiz do projeto.
-2. Execute o comando:
-   ```bash
-   php -S localhost:8000
-   ```
-3. Abra seu navegador e acesse: [http://localhost:8000](http://localhost:8000)
+Basta abrir o arquivo `index.html` em qualquer navegador web ou usar uma extensão de servidor local de sua preferência (ex: Live Server no VS Code).
 
 ---
 

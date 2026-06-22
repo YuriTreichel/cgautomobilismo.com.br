@@ -139,27 +139,27 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('keydown', (e) => {
         // Alt + 1: Home
         if (e.altKey && e.key === '1') {
-            window.location.href = 'index.php';
+            window.location.href = 'index.html';
         }
         // Alt + 2: Sobre
         if (e.altKey && e.key === '2') {
-            window.location.href = 'sobre.php';
+            window.location.href = 'sobre.html';
         }
         // Alt + 3: Transparência
         if (e.altKey && e.key === '3') {
-            window.location.href = 'transparencia.php';
+            window.location.href = 'transparencia.html';
         }
         // Alt + 4: Patrocinadores
         if (e.altKey && e.key === '4') {
-            window.location.href = 'patrocinadores.php';
+            window.location.href = 'patrocinadores.html';
         }
         // Alt + 5: Acessibilidade
         if (e.altKey && e.key === '5') {
-            window.location.href = 'acessibilidade.php';
+            window.location.href = 'acessibilidade.html';
         }
         // Alt + 6: Contato
         if (e.altKey && e.key === '6') {
-            window.location.href = 'contato.php';
+            window.location.href = 'contato.html';
         }
         // Alt + C: Toggle Contrast
         if (e.altKey && (e.key === 'c' || e.key === 'C')) {
