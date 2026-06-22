@@ -179,155 +179,192 @@
             </div>
         </section>
 
-        <!-- Events Dashboard Section -->
-        <section class="section-padding" id="events" aria-label="Eventos e Cronometragem">
+        <!-- About Summary Section -->
+        <section class="section-padding" style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);" id="home-about" aria-label="Sobre o Clube">
             <div class="container">
-                <div class="events-grid">
-                    <!-- Left: Latest Event Result -->
-                    <div class="card-glowing bento-neon-border">
-                        <div class="event-live-indicator">
-                            <i class="fa-solid fa-award"></i> Último Resultado Homologado
-                        </div>
-                        <h3 class="event-title font-italic-bold">Copa Centro-Oeste - Etapa Goiânia</h3>
-                        <div class="event-meta">
-                            <div class="event-meta-item"><i class="fa-solid fa-calendar"></i> 14 de Junho, 2026</div>
-                            <div class="event-meta-item"><i class="fa-solid fa-location-dot"></i> Autódromo de Goiânia</div>
-                        </div>
-                        
-                        <div class="event-map-container">
-                            <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=800&auto=format&fit=crop" alt="Pista do Autódromo Ayrton Senna" class="event-map-img">
-                            <div class="event-map-overlay"></div>
-                            <div style="position: absolute; font-weight: 800; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px;">Traçado Ayrton Senna</div>
-                        </div>
+                <div class="about-history-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 60px;">
+                    <div class="about-history-content">
+                        <span class="section-subtitle">Sobre Nós</span>
+                        <h2 class="font-italic-bold" style="font-size: 2.2rem; margin-bottom: 24px;">Clube Goianiense de Automobilismo</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px;">
+                            Desde a nossa fundação, atuamos na organização, fomento e assessoria técnica de campeonatos de automobilismo em Goiás, transformando paixão em esporte de alto rendimento com segurança e precisão.
+                        </p>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                            Com mais de 35 anos de tradição, unimos pilotos, equipes e entusiastas em eventos memoráveis no Autódromo de Goiânia, incentivando novos talentos e o espírito desportivo.
+                        </p>
+                        <a href="sobre.html" class="btn btn-primary" id="btn-home-about-more">Conheça Nossa História</a>
+                    </div>
+                    <div class="about-history-img-wrapper" style="position: relative; border-radius: var(--border-radius); overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop" alt="Carros clássicos de corrida no autódromo" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
 
-                        <div class="event-leaderboard">
-                            <h4 class="leaderboard-title">Top 3 Classificação Geral</h4>
-                            <table class="leaderboard-table">
-                                <thead>
-                                    <tr>
-                                        <th>POS</th>
-                                        <th>PILOTO</th>
-                                        <th>TEMPO TOTAL</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="font-weight: 700; color: #f1c40f;">P1</td>
-                                        <td style="font-weight: 700;">Gustavo Rodrigues (Goiânia)</td>
-                                        <td>1:24:452</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: 700; color: #95a5a6;">P2</td>
-                                        <td style="color: var(--accent); font-weight: 700;">Rodrigo Alencar (Anápolis)</td>
-                                        <td>+01.309</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: 700; color: #d35400;">P3</td>
-                                        <td style="font-weight: 700;">Felipe Bronze (Rio Verde)</td>
-                                        <td>+04.810</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                <div class="about-values-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+                    <!-- Card 1: Missão -->
+                    <div class="value-card bento-neon-border" style="background: var(--bg-tertiary); padding: 32px; border-radius: var(--border-radius); position: relative;">
+                        <div class="value-icon" style="color: var(--accent); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-crosshairs"></i></div>
+                        <h3 class="value-title font-italic-bold" style="font-size: 1.3rem; margin-bottom: 12px;">Missão</h3>
+                        <p class="value-desc" style="color: var(--text-secondary); font-size: 0.9rem;">
+                            Fomentar a cultura do esporte a motor, organizando campeonatos profissionais e seguros que incentivem novos talentos.
+                        </p>
                     </div>
 
-                    <!-- Right: Next/Live Race Event Info -->
-                    <div class="card-glowing bento-neon-border" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div class="event-live-indicator" style="color: #2ecc71;">
-                                <span class="pulse-dot" style="background-color: #2ecc71; box-shadow: 0 0 8px #2ecc71;"></span> Cronograma da Próxima Etapa
-                            </div>
-                            <h3 class="event-title font-italic-bold">Grande Prêmio de Velocidade CGA</h3>
-                            <div class="event-meta">
-                                <div class="event-meta-item"><i class="fa-solid fa-calendar"></i> 28 de Junho, 2026</div>
-                                <div class="event-meta-item"><i class="fa-solid fa-clock"></i> 09:00h às 17:00h</div>
-                            </div>
-                            
-                            <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;">
-                                Acompanhe o cronômetro oficial dos treinos livres e classificação ao vivo diretamente no autódromo ou em nosso portal de tempos.
-                            </p>
-                            
-                            <ul class="transparency-doc-list" style="margin-top: 0;">
-                                <li class="transparency-doc-item">
-                                    <span class="transparency-doc-link"><i class="fa-solid fa-circle-info text-accent"></i> Regulamento Técnico</span>
-                                    <span class="transparency-doc-meta">PDF (1.2MB)</span>
-                                </li>
-                                <li class="transparency-doc-item">
-                                    <span class="transparency-doc-link"><i class="fa-solid fa-circle-info text-accent"></i> Programação Oficial</span>
-                                    <span class="transparency-doc-meta">PDF (600KB)</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- Card 2: Visão -->
+                    <div class="value-card bento-neon-border" style="background: var(--bg-tertiary); padding: 32px; border-radius: var(--border-radius); position: relative;">
+                        <div class="value-icon" style="color: var(--accent); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-eye"></i></div>
+                        <h3 class="value-title font-italic-bold" style="font-size: 1.3rem; margin-bottom: 12px;">Visão</h3>
+                        <p class="value-desc" style="color: var(--text-secondary); font-size: 0.9rem;">
+                            Ser a principal referência de excelência regulatória e entretenimento automobilístico na região Centro-Oeste.
+                        </p>
+                    </div>
 
-                        <a href="contato.html?ref=credenciamento" class="btn btn-primary" style="width: 100%; margin-top: 24px;" id="btn-live-timing">Credenciamento de Pilotos <i class="fa-solid fa-angles-right" style="margin-left: 8px;"></i></a>
+                    <!-- Card 3: Valores -->
+                    <div class="value-card bento-neon-border" style="background: var(--bg-tertiary); padding: 32px; border-radius: var(--border-radius); position: relative;">
+                        <div class="value-icon" style="color: var(--accent); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="value-title font-italic-bold" style="font-size: 1.3rem; margin-bottom: 12px;">Valores</h3>
+                        <p class="value-desc" style="color: var(--text-secondary); font-size: 0.9rem;">
+                            Segurança absoluta nas pistas, integridade nos regulamentos, respeito aos pilotos e espírito desportivo.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Roster / Board of Directors Section -->
-        <section class="section-padding" style="background-color: var(--bg-secondary);" aria-label="Diretoria CGA">
+        <!-- Transparency Summary Section -->
+        <section class="section-padding" id="home-transparency" aria-label="Portal de Transparência">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" style="margin-bottom: 40px;">
                     <div>
-                        <span class="section-subtitle">Liderança CGA</span>
-                        <h2 class="section-title font-italic-bold">Diretoria Executiva</h2>
+                        <span class="section-subtitle">Conformidade e Acesso</span>
+                        <h2 class="section-title font-italic-bold">Portal da Transparência</h2>
                     </div>
-                    <a href="sobre.html" class="btn btn-secondary" style="font-size: 0.8rem;" id="btn-roster-full">Ver Diretoria Completa</a>
+                    <a href="transparencia.html" class="btn btn-secondary" style="font-size: 0.8rem;" id="btn-home-transparency-more">Ver Todos os Documentos</a>
                 </div>
 
-                <div class="roster-grid">
-                    <!-- Director 1 -->
-                    <div class="driver-card">
-                        <div class="driver-img-wrapper">
-                            <div class="driver-number">01</div>
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="Marcos Vinícius" class="driver-img">
-                            <div class="driver-overlay"></div>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                    <!-- Card 1: Estatuto -->
+                    <a href="transparencia.html#acc-header-estatuto" class="bento-card bento-neon-border" style="background: var(--bg-secondary); padding: 24px; border-radius: var(--border-radius); min-height: 180px;">
+                        <div>
+                            <div style="color: var(--accent); font-size: 1.8rem; margin-bottom: 16px;"><i class="fa-solid fa-gavel"></i></div>
+                            <h3 class="font-italic-bold" style="font-size: 1.1rem; margin-bottom: 8px; color: #fff;">Estatuto Social</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.4;">
+                                Diretrizes administrativas, direitos e regulamentos técnicos da associação.
+                            </p>
                         </div>
-                        <div class="driver-info">
-                            <div class="driver-role">Presidente Executivo</div>
-                            <h3 class="driver-name">Marcos Vinícius</h3>
-                        </div>
-                    </div>
+                    </a>
 
-                    <!-- Director 2 -->
-                    <div class="driver-card">
-                        <div class="driver-img-wrapper">
-                            <div class="driver-number">02</div>
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop" alt="Roberto Carlos" class="driver-img">
-                            <div class="driver-overlay"></div>
+                    <!-- Card 2: Financeiro -->
+                    <a href="transparencia.html#acc-header-financeiro" class="bento-card bento-neon-border" style="background: var(--bg-secondary); padding: 24px; border-radius: var(--border-radius); min-height: 180px;">
+                        <div>
+                            <div style="color: var(--accent); font-size: 1.8rem; margin-bottom: 16px;"><i class="fa-solid fa-chart-line"></i></div>
+                            <h3 class="font-italic-bold" style="font-size: 1.1rem; margin-bottom: 8px; color: #fff;">Demonstrativos</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.4;">
+                                Balanços contábeis patrimoniais e prestação de contas periódicas.
+                            </p>
                         </div>
-                        <div class="driver-info">
-                            <div class="driver-role">Diretor Desportivo</div>
-                            <h3 class="driver-name">Roberto Carlos</h3>
-                        </div>
-                    </div>
+                    </a>
 
-                    <!-- Director 3 -->
-                    <div class="driver-card">
-                        <div class="driver-img-wrapper">
-                            <div class="driver-number">03</div>
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" alt="Patrícia Lima" class="driver-img">
-                            <div class="driver-overlay"></div>
+                    <!-- Card 3: Atas -->
+                    <a href="transparencia.html#acc-header-atas" class="bento-card bento-neon-border" style="background: var(--bg-secondary); padding: 24px; border-radius: var(--border-radius); min-height: 180px;">
+                        <div>
+                            <div style="color: var(--accent); font-size: 1.8rem; margin-bottom: 16px;"><i class="fa-solid fa-file-signature"></i></div>
+                            <h3 class="font-italic-bold" style="font-size: 1.1rem; margin-bottom: 8px; color: #fff;">Atas & Resoluções</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.4;">
+                                Registro oficial das decisões tomadas pelo conselho e assembleias.
+                            </p>
                         </div>
-                        <div class="driver-info">
-                            <div class="driver-role">Diretora Administrativa</div>
-                            <h3 class="driver-name">Patrícia Lima</h3>
+                    </a>
+
+                    <!-- Card 4: Parcerias -->
+                    <a href="transparencia.html#acc-header-parcerias" class="bento-card bento-neon-border" style="background: var(--bg-secondary); padding: 24px; border-radius: var(--border-radius); min-height: 180px;">
+                        <div>
+                            <div style="color: var(--accent); font-size: 1.8rem; margin-bottom: 16px;"><i class="fa-solid fa-handshake-angle"></i></div>
+                            <h3 class="font-italic-bold" style="font-size: 1.1rem; margin-bottom: 8px; color: #fff;">Parcerias & Convênios</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.4;">
+                                Termos de cooperação com prefeituras e órgãos públicos de esporte.
+                            </p>
                         </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" id="home-sponsors" aria-label="Nossos Patrocinadores">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 40px;">
+                    <div>
+                        <span class="section-subtitle">Parcerias Estratégicas</span>
+                        <h2 class="section-title font-italic-bold">Marcas que Aceleram Conosco</h2>
+                    </div>
+                    <a href="patrocinadores.html" class="btn btn-secondary" style="font-size: 0.8rem;" id="btn-home-sponsors-more">Seja um Patrocinador</a>
+                </div>
+
+                <div class="sponsors-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+                    <div class="sponsor-card bento-neon-border">
+                        <img src="assets/images/mitsubishi.svg" alt="Mitsubishi Motors" class="sponsor-card-logo">
+                        <span class="sponsor-card-name">Mitsubishi Motors</span>
+                    </div>
+                    <div class="sponsor-card bento-neon-border">
+                        <img src="assets/images/pirelli.svg" alt="Pirelli Pneus" class="sponsor-card-logo">
+                        <span class="sponsor-card-name">Pirelli Brasil</span>
+                    </div>
+                    <div class="sponsor-card bento-neon-border">
+                        <img src="assets/images/mobil.svg" alt="Mobil Lubrificantes" class="sponsor-card-logo">
+                        <span class="sponsor-card-name">Mobil</span>
+                    </div>
+                    <div class="sponsor-card bento-neon-border">
+                        <img src="assets/images/honda.svg" alt="Honda Automóveis" class="sponsor-card-logo">
+                        <span class="sponsor-card-name">Honda</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sponsors Marquee -->
-        <div class="sponsors-marquee-section" aria-label="Patrocinadores Principais">
-            <div class="container sponsors-marquee-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Mitsubishi_logo.svg" alt="Mitsubishi" class="sponsor-logo-img">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Pirelli_Logo.svg" alt="Pirelli" class="sponsor-logo-img">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Honda-logo.svg" alt="Honda" class="sponsor-logo-img">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Mobil_Logo.svg" alt="Mobil" class="sponsor-logo-img">
+        <!-- Accessibility Summary Section -->
+        <section class="section-padding" id="home-accessibility" aria-label="Compromisso de Acessibilidade">
+            <div class="container">
+                <div class="events-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+                    <div class="card-glowing" style="background: var(--bg-secondary); padding: 32px; border-radius: var(--border-radius); border: 1px solid var(--border-color);">
+                        <span class="section-subtitle">Inclusão Digital</span>
+                        <h2 class="font-italic-bold" style="font-size: 2rem; margin-bottom: 20px;">Navegação Inclusiva</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.95rem;">
+                            Nosso portal foi desenhado com recursos para garantir que todos os usuários, incluindo pessoas com deficiência visual ou dislexia, possam navegar de forma autônoma.
+                        </p>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;">
+                            Utilize o widget de acessibilidade (<i class="fa-solid fa-universal-access"></i>) no topo do site para alterar contraste, ajustar o tamanho das letras (A+ / A-) e ativar fontes legíveis.
+                        </p>
+                        <a href="acessibilidade.html" class="btn btn-primary" id="btn-home-accessibility-more">Mais Recursos e Detalhes</a>
+                    </div>
+
+                    <div class="card-glowing" style="background: var(--bg-secondary); padding: 32px; border-radius: var(--border-radius); border: 1px solid var(--border-color);">
+                        <h3 class="font-italic-bold" style="font-size: 1.3rem; margin-bottom: 20px;"><i class="fa-solid fa-keyboard text-accent" style="margin-right: 10px;"></i> Atalhos Rápidos (Alt + Tecla)</h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:8px;">
+                                <span>Página Inicial</span>
+                                <kbd style="background:var(--bg-tertiary); padding:2px 6px; border-radius:4px; border:1px solid var(--border-color); font-family:monospace;">Alt + 1</kbd>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:8px;">
+                                <span>Sobre o Clube</span>
+                                <kbd style="background:var(--bg-tertiary); padding:2px 6px; border-radius:4px; border:1px solid var(--border-color); font-family:monospace;">Alt + 2</kbd>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:8px;">
+                                <span>Portal da Transparência</span>
+                                <kbd style="background:var(--bg-tertiary); padding:2px 6px; border-radius:4px; border:1px solid var(--border-color); font-family:monospace;">Alt + 3</kbd>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:8px;">
+                                <span>Nossos Patrocinadores</span>
+                                <kbd style="background:var(--bg-tertiary); padding:2px 6px; border-radius:4px; border:1px solid var(--border-color); font-family:monospace;">Alt + 4</kbd>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <span>Acessibilidade</span>
+                                <kbd style="background:var(--bg-tertiary); padding:2px 6px; border-radius:4px; border:1px solid var(--border-color); font-family:monospace;">Alt + 5</kbd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
     </main> <!-- Closing main content container -->
 
